@@ -1,0 +1,55 @@
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+
+nav ul li{
+list-style: none;
+display: inline-block;
+padding: 30px 10px;
+font-size: 30px;
+}
+nav ul li a{
+  color: rgb(220, 150, 20);
+  position: relative;
+  padding: 5px 0;
+}
+nav ul li a:hover{
+  color: chartreuse;
+}
+nav ul li a::after{
+content: "";
+position: absolute;
+left: 0;
+width: 0;
+height: 3px;
+background: red;
+transition: 3s;
+bottom: 0;
+}
+nav ul li a:hover:after{
+width: 100%;
+}
+.btn{
+color: darkred;
+font-size: 16px;
+text-transform: uppercase;
+letter-spacing: 2px;
+padding: 16px 40px;
+border-radius: 500%;
+display: inline-block;
+font-weight: 500;
+transition:all .4s ease-in-out;
+background-size: 152% 100%;
+background: goldenrod; 
+border: 2px solid #fd4766;
+}
+.btn:hover{
+  background: transparent;
+  border-color: fuchsia;
+  color: fuchsia;
+}
+
+
